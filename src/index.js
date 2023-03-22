@@ -11,6 +11,7 @@ const url = require('url')
 const router = express.Router();
 const PortNumber = process.env.port ||3000;
 
+
 hbs.registerPartials(path.join(__dirname,'../templates/partials'));
 app.set('view engine' , 'hbs');
 app.set('views',path.join(__dirname,'../templates/views'));

@@ -4,7 +4,8 @@
   "description": "this is my first node js portfolio website clone with live wheather conditions",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "start": "nodemon src/index.js",
+    "build": "netlify deploy --prod"
   },
   "author": "Vikash Yadav",
   "license": "ISC",

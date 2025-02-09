@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            about us
+        </title>
+        <link rel = 'stylesheet' type="text/css" href = "css/style.css" />
+    </head>
+    <body>
+        <main>
+            <Header class = "others_page">
+                {{>header}} <!-- HEADER OF THE -->
+            </Header>
+            <section class = "about_us" id = "aboutus">
+                <sidebar>
+                   <!-- SIDEBAR IS USED TO SHOW ALL LINKS THAT ARE PRESENTED HERE -->
+                   <div class = "img_container">
+                    <img src = "images/profile.png" alt = "this is a small photo size image" />
+                   </div>
+                   <navbar>
+                     <ul>
+                        <li><a href = "home">HOME</a></li>
+                        <li><a href = "aboutus" class = "active">ABOUT US</a></li>
+                        <li><a href = "resume">RESUME</li></a>
+                        <li>PORTFOLIO</li>
+                        <li>CONTACT</li>
+                     </ul>
+                   </navbar>
+                </sidebar>
+                <div class = "about_content">
+                    <!-- ALL DETAILS OF ABOUT IS WRITTEN HERE -->
+                    <titleBar>
+                        <h1>Contact</h1>
+                    </titleBar>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

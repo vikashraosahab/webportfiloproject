@@ -1,0 +1,62 @@
+@import "variable.scss";
+/* DESIGN FOR POSITION OF THE DISPLAY ELEMENTS */
+@mixin positioned ($position,$top,$bottom,$left,$right) {
+    position:$position;
+    top:$top;
+    bottom:$bottom;
+    left:$left;
+    right:$right;
+}
+
+// FOR BTNS 
+@mixin button () {
+    margin-top:20px;
+    background-color:$first_color;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    text-align: center;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    letter-spacing:1.1px;
+    color:$text_color;
+}
+/* DESIGN FOR SIDEBAR */
+@mixin sidebar () {
+    display:flex;
+        flex-direction: column;
+        line-height: 55px;
+        background-color:$sidebar_color;
+        justify-content: flex-start;
+        align-items: center;
+        navbar {
+            ul {
+                list-style:none;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bolder;
+                font-size: larger;  
+                letter-spacing: 1.3px;
+                line-height: 80px;
+            }
+            a {
+                color:black;
+                text-decoration: none;
+                .active {
+                    color:$active_color;
+                    text-decoration:2px solid underline $active_color;
+                }
+            }
+        }
+}
+ 
+// HOVER EFFECTS
+@mixin hover_effect () {
+    &:hover {
+        background-color: $active_color;
+        transition:1s all;
+    }
+}

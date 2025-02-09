@@ -28,13 +28,16 @@ router.get('/home',(req,res)=>{
 	res.render('index');
 });
 
-router.get('/wheather',function (req,res){
- return res.render('wheather');
+router.get('/resume',function (req,res){
+ return res.render('resume');
 });
 
-router.get('/about',(req,res)=>{
-   res.render('about');
-});
+router.get ('/aboutus',function (req,res){
+  return res.render ('about');
+})
+router.get ('/contact',(req,res)=>{
+  res.render ('contact');
+})
 
 router.get('*',(req,res)=>{
    res.render('errorpage');

@@ -11,7 +11,7 @@
             <Header class = "others_page">
                 {{>header}} <!-- HEADER OF THE -->
             </Header>
-            <section class = "about_us" id = "aboutus">
+            <section class = "contact about_us" id = "contact">
                 <sidebar>
                    <!-- SIDEBAR IS USED TO SHOW ALL LINKS THAT ARE PRESENTED HERE -->
                    <div class = "img_container">
@@ -27,24 +27,25 @@
                      </ul>
                    </navbar>
                 </sidebar>
-                <div class = "about_content">
+                <div class = "contact_content about_content">
                     <!-- ALL DETAILS OF ABOUT IS WRITTEN HERE -->
                     <titleBar>
                         <h1>Contact</h1>
                     </titleBar>
                     <form action = "">
-                        <h5></h5>
+                        <h5>Feel free to connect me to help you in project journey !</h5>
                         <div class = "input-field">
                             <div class = "user_details">
-                                <input type = "text" placeholder = "Enter Your Name"/>
-                                <input type = "email" placeholder = "Enter Your E-mail"/>
-                                <input type = "number" placeholder = "Enter your contact number" />
+                                <input type = "text" placeholder = "Your Name"/>
+                                <input type = "email" placeholder = "Your E-mail"/>
+                                <input type = "number" placeholder = "Contact Number" />
                             </div>
                             <div class = "project_details">
-                                <input type = "Project name" placeholder = "Enter Your Name"/>
-                                <input type = "Time of project completion" placeholder = "Enter Your E-mail"/>
-                                <label>Select Country : </label>
-                                <select id = "country">
+                                <input type = "Project name" placeholder = "Project"/>
+                                <input type = "Time of project completion" placeholder = "Project need in Time"/>
+                                <br/> <!-- LINE BREAK -->
+                                <label style ="font-size: 22px;letter-spacing:.3px;">Select Country : </label>
+                                <select id = "country" style="padding:1em .5em; width:300px;border-radius:30px;">
                                     <option value = "india" selected> India</option>
                                     <option value = "USA">USA</option>
                                     <option value = "UAE">UAE</option>
@@ -59,7 +60,7 @@
                                 </select>
                             </div>
                             <div class = "floating_btn">
-                                <input type = "submit" name = ""/>
+                                <input type = "submit" value = "submit" name = ""/>
                             </div>
                         </div>
                     </form>
